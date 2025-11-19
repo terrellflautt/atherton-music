@@ -1,0 +1,42 @@
+{
+  "siteTitle": "Atherton Music | Leeann Atherton - Texas Gospel, Blues & Americana",
+  "tagline": "God speaks, we listen, Atherton sings.",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "music": "Music",
+    "tour": "Tour Dates",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Atherton Music",
+    "subtitle": "Texas Songwriter Country Blues & Good God Gospel",
+    "newAlbum": "New Gospel Album",
+    "releaseDate": "December 15, 2025",
+    "preOrder": "Pre-Order Now",
+    "listen": "Listen Now",
+    "watchVideo": "Watch Video"
+  },
+  "about": {
+    "title": "About Atherton",
+    "motherSonDuo": "Mother & Son Duo",
+    "genres": "Americana • Blues • Soul • Gospel • Country"
+  },
+  "tour": {
+    "title": "Tour Dates",
+    "spain": "Spain Gospel Tour",
+    "getTickets": "Get Tickets",
+    "moreInfo": "More Info"
+  },
+  "music": {
+    "title": "Listen Now",
+    "latestRelease": "Latest Release",
+    "discography": "Discography",
+    "streamOn": "Stream on"
+  },
+  "footer": {
+    "followUs": "Follow Atherton Music",
+    "contact": "Get in Touch",
+    "rights": "© 2025 Atherton Music. All rights reserved."
+  }
+}
