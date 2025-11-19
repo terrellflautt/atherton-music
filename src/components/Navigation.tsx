@@ -34,7 +34,7 @@ export default function Navigation() {
               transition={{ duration: 0.5 }}
               className="text-2xl md:text-3xl font-bold gradient-text"
             >
-              Atherton Music
+              Atherton
             </motion.div>
           </Link>
 

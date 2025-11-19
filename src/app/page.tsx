@@ -36,20 +36,63 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-28 pb-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 pb-20">
           <motion.div variants={fadeInUp} initial="hidden" animate="visible">
+            {/* Tagline at Top */}
             <motion.p
-              className="text-xl md:text-2xl lg:text-3xl mb-6 text-[var(--accent-cream)] font-light italic"
+              className="text-xl md:text-2xl lg:text-3xl mb-8 text-[var(--accent-cream)] font-light italic"
               variants={fadeInUp}
             >
               "{bioContent.tagline}"
             </motion.p>
 
+            {/* Tonight's Show Flyer */}
+            <motion.div variants={scaleIn} className="mb-8">
+              <Image
+                src="/images/tonight-show-flyer.jpg"
+                alt="Tonight's Show - Walburg German Restaurant"
+                width={600}
+                height={800}
+                className="mx-auto rounded-2xl shadow-2xl border-2 border-[var(--accent-gold)]"
+                priority
+              />
+            </motion.div>
+
+            {/* Tonight's Show Info Card */}
+            <motion.div variants={scaleIn} className="mb-12">
+              <Card variant="highlight" padding="lg" className="max-w-3xl mx-auto bg-gradient-to-r from-red-600/50 to-orange-600/50 border-2 border-[var(--accent-gold)]">
+                <p className="text-[var(--accent-gold)] font-bold text-base md:text-lg mb-2 uppercase tracking-wider animate-pulse">
+                  TONIGHT - November 19th
+                </p>
+                <h2 className="text-3xl md:text-5xl font-bold text-white mb-3">
+                  Walburg German Restaurant
+                </h2>
+                <p className="text-gray-100 text-base md:text-lg mb-6 font-semibold">
+                  3777 FM 972, Walburg, TX
+                </p>
+                <div className="flex flex-col sm:flex-row gap-6 md:gap-8 justify-center">
+                  <Button
+                    as="link"
+                    href="https://www.google.com/maps/search/?api=1&query=3777+FM+972+Walburg+TX"
+                    variant="primary"
+                    size="lg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Get Directions
+                  </Button>
+                  <Button as="link" href="/tour" variant="ghost" size="lg">
+                    View All Shows
+                  </Button>
+                </div>
+              </Card>
+            </motion.div>
+
             <motion.h1
               className="text-5xl md:text-7xl lg:text-9xl font-bold mb-6 gradient-text"
               variants={fadeInUp}
             >
-              Atherton Music
+              Atherton
             </motion.h1>
 
             <motion.p
@@ -154,9 +197,10 @@ export default function Home() {
                   variant="highlight"
                   padding="lg"
                   hover
-                  className="text-center group"
+                  className="text-center group flex flex-col items-center justify-center min-h-[120px]"
                 >
-                  <p className="text-[var(--accent-gold)] font-bold text-lg group-hover:text-white transition-colors">
+                  <div className="text-3xl mb-2 text-[var(--accent-gold)] group-hover:text-white transition-colors">♪</div>
+                  <p className="text-[var(--accent-gold)] font-bold text-base group-hover:text-white transition-colors">
                     {link.platform}
                   </p>
                 </Card>

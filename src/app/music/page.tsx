@@ -54,7 +54,7 @@ export default function MusicPage() {
                 whileHover={{ scale: 1.05 }}
                 className="p-8 bg-gradient-to-br from-[var(--accent-burgundy)]/40 to-[var(--accent-warm)]/40 rounded-2xl border-2 border-[var(--accent-gold)]/40 hover:border-[var(--accent-gold)] transition-all shadow-lg hover:shadow-2xl text-center group"
               >
-                <div className="text-6xl mb-4">🎵</div>
+                <div className="text-6xl mb-4 text-[var(--accent-gold)]">♪</div>
                 <h3 className="text-2xl font-bold text-white group-hover:text-[var(--accent-gold)] transition-colors mb-2">
                   {link.platform}
                 </h3>

@@ -9,6 +9,11 @@ export interface TourDate {
 
 export const tourDates: TourDate[] = [
   {
+    date: "2025-11-19",
+    venue: "Walburg German Restaurant",
+    location: "3777 FM 972, Walburg, TX",
+  },
+  {
     date: "2025-05-17",
     venue: "Sam's Town Point",
     location: "Austin, TX",

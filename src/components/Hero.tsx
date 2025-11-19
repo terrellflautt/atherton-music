@@ -25,12 +25,46 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          {/* Tonight's Show - Featured at Top */}
+          <motion.div
+            className="mb-8 p-8 bg-gradient-to-r from-red-600/50 to-orange-600/50 backdrop-blur-md rounded-2xl border-2 border-[var(--accent-gold)] max-w-2xl mx-auto shadow-2xl"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+          >
+            <p className="text-[var(--accent-gold)] font-bold text-base md:text-lg mb-2 uppercase tracking-wider animate-pulse">
+              🎵 TONIGHT - November 19th
+            </p>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-3">
+              Walburg German Restaurant
+            </h2>
+            <p className="text-gray-100 text-base md:text-lg mb-4 font-semibold">
+              3777 FM 972, Walburg, TX
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=3777+FM+972+Walburg+TX"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-[var(--accent-gold)] text-black font-bold rounded-lg hover:bg-[var(--accent-gold)]/90 transition-all transform hover:scale-105 shadow-lg"
+              >
+                Get Directions
+              </a>
+              <a
+                href="#tour"
+                className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-all transform hover:scale-105"
+              >
+                View All Shows
+              </a>
+            </div>
+          </motion.div>
+
           {/* Logo */}
           <motion.div
             className="mb-8"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
           >
             <Image
               src="/images/atherton-logo.png"
@@ -46,7 +80,7 @@ export default function Hero() {
             className="text-xl md:text-2xl lg:text-3xl mb-6 text-[var(--accent-cream)] font-light italic"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
           >
             "God speaks, we listen, Atherton sings."
           </motion.p>
@@ -56,9 +90,9 @@ export default function Hero() {
             className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 gradient-text"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
           >
-            Atherton Music
+            Atherton
           </motion.h1>
 
           {/* Subtitle */}
@@ -66,7 +100,7 @@ export default function Hero() {
             className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
+            transition={{ delay: 1.0, duration: 0.8 }}
           >
             Texas Songwriter Country Blues & Good God Gospel
           </motion.p>
@@ -76,7 +110,7 @@ export default function Hero() {
             className="flex flex-wrap justify-center gap-3 mb-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 0.8 }}
+            transition={{ delay: 1.2, duration: 0.8 }}
           >
             {['Americana', 'Blues', 'Soul', 'Gospel', 'Country'].map((genre, index) => (
               <span
@@ -93,7 +127,7 @@ export default function Hero() {
             className="mb-10 p-8 bg-gradient-to-r from-[var(--accent-burgundy)]/40 to-[var(--accent-warm)]/40 backdrop-blur-md rounded-2xl border-2 border-[var(--accent-gold)]/50 max-w-2xl mx-auto"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 1.2, duration: 0.8 }}
+            transition={{ delay: 1.4, duration: 0.8 }}
           >
             <p className="text-[var(--accent-gold)] font-semibold text-sm md:text-base mb-2 uppercase tracking-wider">
               New Gospel Album
